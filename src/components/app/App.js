@@ -24,8 +24,9 @@ export default class App extends React.Component {
 			<BrowserRouter>
 				<div className="app_component">
 					<Header />
+					{/* <Rate date={date}/> */}
 					<Routes>
-						<Route path='/' element={<Rate date={date} />} />
+						<Route path='*' element={<Rate date={date} />} />
 						<Route path='/weather' element={<Weather city={cityParam} date={date}/>} />
 					</Routes>
 					<Footer />
